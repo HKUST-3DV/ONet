@@ -1,0 +1,12 @@
+inherit_from: configs/pointcloud/onet_igibson.yaml
+data:
+  dataset: iGibson
+  path: /mnt/cap/fangchuan/DeepPanoContext/Panorama_feature_extraction_matching/data/raw_igibson_obj/igibson_obj
+training:
+  out_dir:  demo/igibson
+  batch_size: 64
+generation:
+  generation_dir: for_gf_3d
+  generate_latentcode: true
+  refinement_step: 30
+  simplify_nfaces: 5000

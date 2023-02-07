@@ -1,0 +1,11 @@
+inherit_from: configs/pointcloud/onet_igibson.yaml
+data:
+  dataset: iGibson
+  path: /media/ziqianbai/BACKPACK_DATA1/DeepPanoContext/iGibson/aug_igibson_obj
+training:
+  out_dir:  demo/igibson
+  batch_size: 64
+generation:
+  generation_dir: auged_results/latent_codes
+  refinement_step: 30
+  simplify_nfaces: 5000
